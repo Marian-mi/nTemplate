@@ -1,0 +1,94 @@
+@import './common.scss';
+@import './slider.scss';
+@import './services.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #f8f9fb;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+    flex-wrap: wrap;
+
+    &__login {
+        width: 50%;
+        min-width: 60px;
+        color: $lightGreen;
+        display: inline-flex;
+        align-items: center;
+        svg {
+            margin-right: 10px;
+        }
+    }
+}
+
+.header__left {
+    width: 60%;
+    min-width: 550px;
+}
+
+.header__right {
+    width: 20%;
+    display: flex;
+}
+
+.header__link {
+    width: 30%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #93c6a7;
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.header__link button {
+    margin-left: 50px;
+    border-radius: 0;
+}
+
+.navbar {
+    padding: 30px 10%;
+    background-color: white;
+    &-icons {
+        width: 200px;
+        display: inline-flex;
+        height: 50px;
+        align-items: center;
+        justify-content: flex-end;
+        button {
+            margin: 0 5px;
+            height: 40px;
+            width: 40px;
+            border-radius: 0;
+            svg {
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+.active {
+    color: $lightGreen;
+}
+
+.nav {
+    &-item {
+        margin: 0 10px;
+    }
+    &-link {
+        color: black;
+        &-active {
+            color: $lightGreen;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import './common.scss';
+
+.services {
+    flex-wrap: wrap;
+    h2 {
+        border-bottom: 4px solid rgb(40 167 69);
+        height: 40px;
+    }
+    .cards-wrapper {
+        margin-top: 100px;
+        width: 100%;
+    }
+    &-card {
+        border: 1px solid rgba(165, 165, 165, 0.541);
+        width: 30%;
+        margin: 0 20px;
+    }
+}
+
+.hexagon {
+    position: relative;
+    width: 100px;
+    margin: auto;
+    bottom: 50%;
+    height: 75px;
+    > div {
+        position: absolute;
+    }
+    &-middle {
+        width: 100px;
+        background-color: $Green;
+        height: 75px;
+    }
+    &-top {
+        border-bottom: 25px solid $Green;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        bottom: 100%;
+    }
+    &-bottom {
+        border-top: 25px solid $Green;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        top: 100%;
+    }
+}
