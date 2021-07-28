@@ -1,0 +1,97 @@
+@import './common.scss';
+
+.courses {
+    flex-wrap: wrap;
+    padding: 5% 10%;
+
+    h2 {
+        @include title;
+        margin-bottom: 0;
+    }
+
+    > p {
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+    &-slider {
+        height: 600px;
+        width: 90%;
+        margin: auto;
+    }
+    &-image {
+        height: 200px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-card {
+        margin: 0 10px;
+        padding-bottom: 20px;
+        button {
+            @include button
+        }
+    }
+    &-info {
+        padding: 20px;
+        box-shadow: 0px 4px 4px 0 rgba(163, 163, 163, 0.295);
+        p {
+            margin: 20px 0;
+        }
+    }
+    &-category {
+        height: 60px;
+        background-color: $Green;
+        padding: 15px 20px;
+        font-size: 20px;
+        color: rgba(245, 245, 245, 0.938);
+        position: relative;
+        text-align: left;
+    }
+    &-price {
+        position: absolute;
+        right: 0;
+        bottom: calc(50% + 15px);
+        display: flex;
+        align-items: center;
+        height: 45px;
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: #1b3862;
+    }
+    &-rating {
+        svg {
+            color: #f6b233;
+            font-size: 12px;
+            margin: 0 3px;
+        }
+    }
+    .slick-dots {
+        bottom: 30px;
+        .slick-active {
+            button::before{
+                color: $Green;
+            }
+        }
+    }
+    &-arrow {
+        background-color: white;
+        z-index: 5;
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        padding: 5px;
+        top: calc(50% - 25px);
+        svg {
+            color: rgba(128, 128, 128, 0.699);
+        }
+        border: none;
+    }
+    &-next {
+        right: 10px;
+    }
+    &-prev {
+        left: 10px;
+    }
+}

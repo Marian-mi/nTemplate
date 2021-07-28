@@ -2,27 +2,41 @@
 
 .services {
     flex-wrap: wrap;
+    padding: 5% 10%;
     h2 {
-        border-bottom: 4px solid rgb(40 167 69);
-        height: 40px;
+        @include title
     }
     .cards-wrapper {
-        margin-top: 100px;
         width: 100%;
     }
     &-card {
         border: 1px solid rgba(165, 165, 165, 0.541);
         width: 30%;
-        margin: 0 20px;
+        margin: 0 10px;
+        padding-bottom: 20px;
+        button {
+            color: white;
+            border-radius: 0;
+            background-color: $Green;
+            margin: 10px 0;
+        }
+        h5 {
+            margin-bottom: 20px;
+            color: rgb(58, 58, 58);
+        }
+        p {
+            color: rgba(66, 66, 66, 0.795);
+        }
     }
 }
 
 .hexagon {
     position: relative;
-    width: 100px;
+    width: 120px;
     margin: auto;
-    bottom: 50%;
+    bottom: 15%;
     height: 75px;
+    left: 10px;
     > div {
         position: absolute;
     }
@@ -30,6 +44,12 @@
         width: 100px;
         background-color: $Green;
         height: 75px;
+        svg {
+            font-size: 46px;
+            color: rgba(255, 255, 255, 0.836);
+            position: relative;
+            top: 10px;
+        }
     }
     &-top {
         border-bottom: 25px solid $Green;
