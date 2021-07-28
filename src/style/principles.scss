@@ -1,0 +1,26 @@
+@import './common.scss';
+
+.principles {
+    background-image: url(../../src/assets/images/xhero_1.jpg.pagespeed.ic.-yaFVozZ39.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    &-cardsWrapper {
+        padding: 5% 10%;
+        background-color: #2a405ee5;
+    }
+    &-icon {
+        font-size: 44px;
+        color: #57b97e;
+        opacity: 0.7;
+    }
+    &-title {
+        opacity: 0.7;
+        color: #57b97e;
+        margin-top: 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    &-content {
+        color: #6586a5;
+    }
+}
