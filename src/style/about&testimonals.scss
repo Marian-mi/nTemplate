@@ -2,10 +2,12 @@
 
 .about {
     background-color: #2e4a71;
-    padding: 5% 12%;
+    @include containers();
 
     h2 {
         @include title;
+        margin-bottom: 20px;
+        height: unset;
         color: rgba(243, 243, 243, 0.842);
     }
 
@@ -19,7 +21,7 @@
 }
 
 .testimonal {
-    padding: 5% 10%;
+    @include containers();
 
     h2 {
         @include title;
@@ -49,7 +51,7 @@
     }
 
     &-image {
-        margin-right: -20px;
+        margin-right: -10px;
         img {
             width: 50px;
             height: 50px;

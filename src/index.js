@@ -45,7 +45,7 @@ $('.testimonal-slider').slick({
     adaptiveHeight: true,
     responsive: [
         {
-            breakpoint: 1350,
+            breakpoint: 860,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -55,5 +55,28 @@ $('.testimonal-slider').slick({
         },
     ]
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navIcon = document.querySelector('.navbar-menu')
+    const sideMenu = document.querySelector('.sideMenu')
+    const closeIcon = document.querySelector('.closeSideMenu')
+    const collapseButton = document.querySelector('.sideMenuCollapseButton')
+    const collapseIcon = document.querySelector('.collapseIcon')
+
+    navIcon.addEventListener('click', () => {
+        sideMenu.classList.add('sideMenu-active')
+    })
+
+    closeIcon.addEventListener('click', () => {
+        sideMenu.classList.remove('sideMenu-active')
+    })
+
+    collapseButton.addEventListener('click', () => {
+        console.log('s')
+        collapseIcon.classList.toggle('rotateCollapseIcon')
+    })
+})
+
 
 

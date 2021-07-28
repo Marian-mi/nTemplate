@@ -7,9 +7,25 @@ $Green: #51bf78;
     margin-bottom: 150px;
 }
 
+@mixin containers {
+    padding: 5% 10%;
+    @include breakPointmax(950px) {
+        padding: 5% 5%;
+    };
+    @include breakPointmax(600px) {
+        padding: 5% 1%;
+    }
+}
+
 @mixin button {
     border-radius: 0;
     background-color: $Green;
     color: rgba(255, 255, 255, 0.856);
     transform: scaleX(1.2);
+}
+
+@mixin breakPointmax($width) {
+    @media (max-width: $width) {
+        @content;
+    }
 }

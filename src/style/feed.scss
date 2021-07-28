@@ -1,7 +1,7 @@
 @import './common.scss';
 
 .feed {
-    padding: 5% 10%;
+    @include containers();
     &-header {
         margin-bottom: 2px;
     }
@@ -20,8 +20,11 @@
     &-image {
         margin: 40px 0;
         height: 56%;
+        display: flex;
+        justify-content: center;
         img {
             width: 100%;
+            max-width: 600px;
             height: 100%;
         }
     }
@@ -57,8 +60,11 @@
         height: 30%;
         margin-bottom: 20px;
         position: relative;
+        display: flex;
+        justify-content: center;
         img {
             width: 100%;
+            max-width: 350px;
             height: 100%;
         }
     }
@@ -84,7 +90,7 @@
     background-image: url(../../src/assets/images/xbg_1.jpg.pagespeed.ic.bYKh1zv1gk.jpg);
     background-attachment: fixed;
     &-wrapper {
-        background-color: rgba(59, 84, 121, 0.541);
+        background-color: rgba(36, 57, 90, 0.753);
         padding: 5% 10%;
     }
     &-content {
@@ -115,5 +121,8 @@
         height: 45px;
         width: 20%;
         background-color: $Green;
+    }
+    input, button {
+        box-shadow: 0 0 4px 0 rgba(128, 128, 128, 0.938);
     }
 }

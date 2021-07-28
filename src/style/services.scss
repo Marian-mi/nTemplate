@@ -2,17 +2,19 @@
 
 .services {
     flex-wrap: wrap;
-    padding: 5% 10%;
+    @include containers();
     h2 {
         @include title
     }
+
     .cards-wrapper {
         width: 100%;
     }
     &-card {
         border: 1px solid rgba(165, 165, 165, 0.541);
-        width: 30%;
+        width: 260px;
         margin: 0 10px;
+        padding: 0 10px;
         padding-bottom: 20px;
         button {
             color: white;

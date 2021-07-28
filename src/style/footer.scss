@@ -1,0 +1,32 @@
+@import './common.scss';
+
+.footer {
+    @include containers();
+    background-color: #193660;
+
+    p,
+    h5 {
+        color: rgba(228, 228, 228, 0.808);
+    }
+
+    h5 {
+        border-bottom: 3px solid rgba(228, 228, 228, 0.808);
+        height: 30px;
+        margin-bottom: 150px;
+        display: inline-block;
+    }
+
+    &-link {
+        color: $Green;
+        opacity: 0.8;
+        &:hover {
+            color: rgba(228, 228, 228, 0.808);
+        }
+    }
+
+    &-copyRight {
+        text-align: center;
+        color: rgba(228, 228, 228, 0.808);
+        margin-top: 100px;
+    }
+}

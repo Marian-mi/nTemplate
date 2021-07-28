@@ -4,8 +4,13 @@
     background-image: url(../../src/assets/images/xhero_1.jpg.pagespeed.ic.-yaFVozZ39.jpg);
     background-size: cover;
     background-attachment: fixed;
+    &-card {
+        @include breakPointmax(1000px) {
+            margin-bottom: 80px;
+        }
+    }
     &-cardsWrapper {
-        padding: 5% 10%;
+        @include containers();
         background-color: #2a405ee5;
     }
     &-icon {
