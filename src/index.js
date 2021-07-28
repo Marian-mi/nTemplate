@@ -16,24 +16,44 @@ $('.courses-slider').slick({
     prevArrow: '<button class="courses-prev courses-arrow"><i class="fas fa-arrow-left"></i></button>',
     nextArrow: '<button class="courses-next courses-arrow"><i class="fas fa-arrow-right"></i></button >',
     responsive: [
-      {
-        breakpoint: 1350,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 856,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
+        {
+            breakpoint: 1350,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 856,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
     ]
-  });
+});
+
+$('.testimonal-slider').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    adaptiveHeight: true,
+    responsive: [
+        {
+            breakpoint: 1350,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+    ]
+});
 
 
-    
