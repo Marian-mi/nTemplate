@@ -12,11 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
-    "bootstrap": "^5.0.2",
-    "bootstrap-icons": "^1.5.0",
-    "sass": "^1.36.0"
+    "bootstrap": "^5.0.2"
   },
   "devDependencies": {
+    "sass": "^1.36.0",
     "node-sass": "^6.0.1"
   }
 }

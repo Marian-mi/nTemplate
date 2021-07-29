@@ -1,4 +1,4 @@
-@import './common.scss';
+@import "./common.scss";
 
 .about {
     background-color: #2e4a71;
@@ -59,11 +59,13 @@
         }
     }
 
-    
     .slick-dots {
         bottom: 30px;
+        button::before {
+            color: $Green;
+        }
         .slick-active {
-            button::before{
+            button::before {
                 color: $Green;
             }
         }

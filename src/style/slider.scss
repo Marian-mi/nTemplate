@@ -1,4 +1,3 @@
-
 .slider {
     width: 100%;
     height: 95vh;
@@ -40,6 +39,18 @@
     }
     @include breakPointmax(880px) {
         height: 70vh;
+    }
+
+    .slick-dots {
+        bottom: 30px;
+        button::before {
+            color: $Green;
+        }
+        .slick-active {
+            button::before {
+                color: $Green;
+            }
+        }
     }
 }
 

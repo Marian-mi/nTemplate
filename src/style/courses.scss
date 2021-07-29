@@ -1,4 +1,4 @@
-@import './common.scss';
+@import "./common.scss";
 
 .courses {
     flex-wrap: wrap;
@@ -30,7 +30,7 @@
         margin: 0 10px;
         padding-bottom: 20px;
         button {
-            @include button
+            @include button;
         }
     }
     &-info {
@@ -67,14 +67,6 @@
             margin: 0 3px;
         }
     }
-    .slick-dots {
-        bottom: 30px;
-        .slick-active {
-            button::before{
-                color: $Green;
-            }
-        }
-    }
     &-arrow {
         background-color: white;
         z-index: 5;
@@ -93,5 +85,17 @@
     }
     &-prev {
         left: 10px;
+    }
+
+    .slick-dots {
+        bottom: 30px;
+        button::before {
+            color: $Green;
+        }
+        .slick-active {
+            button::before {
+                color: $Green;
+            }
+        }
     }
 }

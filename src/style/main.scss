@@ -21,12 +21,12 @@
     flex-wrap: wrap;
 
     &__login {
-        width: 45%;
-        min-width: 60px;
+        width: 120px;
         color: $lightGreen;
         display: inline-flex;
         align-items: center;
         justify-content: flex-end;
+        margin-right: 10px;
         svg {
             margin-right: 10px;
         }
@@ -40,16 +40,17 @@
         }
     }
 
+    @include breakPointmax(1000px) {
+        padding: 10px 1%;
+    }
+
     @include breakPointmax(900px) {
         justify-content: flex-end;
-    }
-    @include breakPointmax(600px) {
-        padding: 10px 1%;
     }
 }
 
 .header__left {
-    width: 60%;
+    width: 55%;
     min-width: 550px;
 
     @include breakPointmax(900px) {
@@ -58,9 +59,9 @@
 }
 
 .header__right {
-    width: 20%;
+    width: 25%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     @include breakPointmax(900px) {
         width: 40%;
     }
@@ -73,7 +74,7 @@
 
 .header__link {
     width: 30%;
-    height: 100%;
+    height: 50px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +154,6 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(128, 128, 128, 0.363);
     z-index: 500;
 
     &-wrapper {
@@ -210,11 +210,12 @@
     }
     transform: translateX(100%);
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.8s cubic-bezier(.53,-0.65,.96,.3);
 }
 
 .sideMenu-active {
     transform: translateX(0%);
+    transition: 0.8s cubic-bezier(0.47, 0.16, 0.3, 1.7);
     opacity: 1;
 }
 
@@ -224,3 +225,13 @@
         transform: rotate(180deg);
     }
 }
+
+.dropdown-item {
+    &:hover {
+        background-color: $lightGreen;
+    }
+    &:focus {
+        background-color: $Green;
+    }
+}
+
