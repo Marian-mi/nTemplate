@@ -1,0 +1,632 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="../Slick/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../Slick/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+    <div id="root">
+        <header>
+            <div class="header">
+                <div class="header__left">
+                    <a class="header__link">
+                        <i class="fas fa-question"></i>Have questions?
+                    </a>
+                    <a class="header__link">
+                        <i class="fas fa-phone"></i>10 20 123 456
+                    </a>
+                    <a class="header__link">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>info@mydomain.com
+                    </a>
+                </div>
+                <div class="header__right">
+                    <a class="header__login">
+                        <i class="fas fa-lock"></i>Log In
+                    </a>
+                    <div class="header__login">
+                        <button type="button" class="btn btn-success btn-lg">Register</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="./media/images/xlogo.jpg.pagespeed.ic.fRho2_GusO.jpg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-active" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Admissions</a>
+                            <a class="dropdown-item" href="#">Courses</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Contact</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Admission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-icons">
+                <button class="btn bg-success">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                <button class="btn bg-success">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button class="btn bg-success">
+                    <i class="fab fa-linkedin-in"></i>
+                </button>
+                <button class="btn bg-success navbar-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- slider -->
+        <div class="slick-slider slider">
+            <div class="slick-slide">
+                <div class="slider-panel">
+                </div>
+                <div class="slider-text">
+                    <p>Academics</p>
+                    <p>University</p>
+                </div>
+                <img src="./media/images/xhero_1.jpg.pagespeed.ic.-yaFVozZ39.jpg" alt="slideiamge1">
+            </div>
+            <div class="slick-slide">
+                <div class="slider-panel"></div>
+                <div class="slider-text">
+                    <p>Academics</p>
+                    <p>University</p>
+                </div>
+                <img src="./media/images/xblog_large_1.jpg.pagespeed.ic.i8Gx2Hw_Ng.jpg" alt="slideiamge1">
+            </div>
+        </div>
+
+        <!-- Services -->
+        <section class="services text-center">
+            <h2 class="text-center d-inline-block">Why Academic works</h2>
+            <div class="cards-wrapper d-flex justify-content-center flex-wrap">
+                <div class="services-card mb-5 text-center">
+                    <div class="hexagon">
+                        <div class="hexagon-top"></div>
+                        <div class="hexagon-middle">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="hexagon-bottom"></div>
+                    </div>
+                    <h5>Personalize Learning</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+                <div class="services-card mb-5 text-center">
+                    <div class="hexagon">
+                        <div class="hexagon-top"></div>
+                        <div class="hexagon-middle">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <div class="hexagon-bottom"></div>
+                    </div>
+                    <h5>Trusted Courses</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+                <div class="services-card mb-5 text-center">
+                    <div class="hexagon">
+                        <div class="hexagon-top">
+                        </div>
+                        <div class="hexagon-middle">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="hexagon-bottom"></div>
+                    </div>
+                    <h5>Tools for Students</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses -->
+        <section class="courses text-center">
+            <h2 class="text-center d-inline-block">Popular Courses</h2>
+            <p>orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            <div class="courses-slider d-flex">
+                <div class="courses-card text-center">
+                    <div class="courses-image">
+                        <img src="./media/images/xcourse_1.jpg.pagespeed.ic.LYi2PrMv7M.jpg" alt="">
+                    </div>
+                    <div class="courses-category">
+                        Mobile Application
+                        <span class="courses-price">$99.00</span>
+                    </div>
+                    <div class="courses-info">
+                        <h5>Personalize Learning</h5>
+                        <div class="courses-rating mt-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </p>
+                        <button class="btn">Enroll In This Course</button>
+                    </div>
+                </div>
+                <div class="courses-card text-center">
+                    <div class="courses-image">
+                        <img src="./media/images/xcourse_2.jpg.pagespeed.ic.yVix3ISSKT.jpg" alt="">
+                    </div>
+                    <div class="courses-category">
+                        Web Design
+                        <span class="courses-price">$99.00</span>
+                    </div>
+                    <div class="courses-info">
+                        <h5>Personalize Learning</h5>
+                        <div class="courses-rating mt-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </p>
+                        <button class="btn">Enroll In This Course</button>
+                    </div>
+                </div>
+                <div class="courses-card text-center">
+                    <div class="courses-image">
+                        <img src="./media/images/xcourse_3.jpg.pagespeed.ic.mhpEN47Qcr.jpg" alt="">
+                    </div>
+                    <div class="courses-category">
+                        Arithmetic
+                        <span class="courses-price">$99.00</span>
+                    </div>
+                    <div class="courses-info">
+                        <h5>Personalize Learning</h5>
+                        <div class="courses-rating mt-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </p>
+                        <button class="btn">Enroll In This Course</button>
+                    </div>
+                </div>
+                <div class="courses-card text-center">
+                    <div class="courses-image">
+                        <img src="./media/images/xcourse_4.jpg.pagespeed.ic.tqNvuJbiJI.jpg" alt="">
+                    </div>
+                    <div class="courses-category">
+                        Writing
+                        <span class="courses-price">$99.00</span>
+                    </div>
+                    <div class="courses-info">
+                        <h5>Personalize Learning</h5>
+                        <div class="courses-rating mt-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </p>
+                        <button class="btn">Enroll In This Course</button>
+                    </div>
+                </div>
+                <div class="courses-card text-center">
+                    <div class="courses-image">
+                        <img src="./media/images/xcourse_5.jpg.pagespeed.ic.rI86ZBarTv.jpg" alt="">
+                    </div>
+                    <div class="courses-category">
+                        English
+                        <span class="courses-price">$99.00</span>
+                    </div>
+                    <div class="courses-info">
+                        <h5>Personalize Learning</h5>
+                        <div class="courses-rating mt-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </p>
+                        <button class="btn">Enroll In This Course</button>
+                    </div>
+                </div>
+                <div class="courses-card text-center">
+                    <div class="courses-image">
+                        <img src="./media/images/xcourse_6.jpg.pagespeed.ic.dzMG9vk6VZ.jpg" alt="">
+                    </div>
+                    <div class="courses-category">
+                        Computer Science
+                        <span class="courses-price">$99.00</span>
+                    </div>
+                    <div class="courses-info">
+                        <h5>Personalize Learning</h5>
+                        <div class="courses-rating mt-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </p>
+                        <button class="btn">Enroll In This Course</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about d-flex flex-wrap">
+            <div class="col-lg-4 col-sm-12 mr-5">
+                <h2>About Our University</h2>
+            </div>
+            <div class="col-lg-7 col-sm-12">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam,
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <span>Read more</span>
+            </div>
+        </section>
+
+        <!-- Testimonals -->
+        <section class="testimonal">
+            <h2>Testimonals</h2>
+            <div class="testimonal-slider">
+                <div class="testimonal-card">
+                    <div class="testimonal-author d-flex">
+                        <div class="testimonal-image col-2">
+                            <img src="./media/images/xperson_1.jpg.pagespeed.ic.ek_oXY_vZr.jpg" alt="">
+                        </div>
+                        <div class="testimonal-info col-7">
+                            <strong>Allison Holmes</strong>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                    <div class="testimonal-message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+                <div class="testimonal-card">
+                    <div class="testimonal-author d-flex">
+                        <div class="testimonal-image col-2">
+                            <img src="./media/images/xperson_2.jpg.pagespeed.ic.ZhHlp5WpL3.jpg" alt="">
+                        </div>
+                        <div class="testimonal-info col-7">
+                            <strong>Allison Holmes</strong>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                    <div class="testimonal-message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+                <div class="testimonal-card">
+                    <div class="testimonal-author d-flex">
+                        <div class="testimonal-image col-2">
+                            <img src="./media/images/xperson_3.jpg.pagespeed.ic.riM5PEA8y7.jpg" alt="">
+                        </div>
+                        <div class="testimonal-info col-7">
+                            <strong>Allison Holmes</strong>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                    <div class="testimonal-message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+                <div class="testimonal-card">
+                    <div class="testimonal-author d-flex">
+                        <div class="testimonal-image col-2">
+                            <img src="./media/images/xperson_4.jpg.pagespeed.ic.R9GIPEe4kr.jpg" alt="">
+                        </div>
+                        <div class="testimonal-info col-7">
+                            <strong>Allison Holmes</strong>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                    <div class="testimonal-message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+        </section>
+
+        <!-- Principles -->
+        <section class="principles">
+            <div class="principles-cardsWrapper flex-wrap d-flex">
+                <div class="principles-card col-md-12 col-lg-4 ">
+                    <div class="principles-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="principles-title">
+                        Our Philosophy
+                    </div>
+                    <div class="principles-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                    </div>
+                </div>
+                <div class="principles-card col-md-12 col-lg-4">
+                    <div class="principles-icon">
+                        <fa class="fas fa-pencil-ruler"></fa>
+                    </div>
+                    <div class="principles-title">
+                        Academics Principle
+                    </div>
+                    <div class="principles-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                    </div>
+                </div>
+                <div class="principles-card col-md-12 col-lg-4">
+                    <div class="principles-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="principles-title">
+                        Key of Success
+                    </div>
+                    <div class="principles-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feed -->
+        <section class="feed d-flex flex-wrap">
+            <div class="news col-lg-4 col-md-12">
+                <h3 class="feed-header">
+                    News & Updates
+                </h3>
+                <a href="#" class="feed-redirect">
+                    Read All News
+                </a>
+                <div class="news-image">
+                    <img src="./media/images/xblog_1.jpg.pagespeed.ic.W_YnMVf_Za.jpg" alt="feed">
+                </div>
+                <span class="feed-date">
+                    JUNE 6 2019 / ADMISSION, UPDATES
+                </span>
+                <p class="news-title">
+                    Campus Camping and Learning Session
+                </p>
+            </div>
+            <div class="articles col-lg-5 col-md-12 mb-5">
+                <div class="articles-card d-flex mb-3">
+                    <div class="col-3 articles-image">
+                        <img src="./media/images/xblog_2.jpg.pagespeed.ic.Zqzj4W2tE3.jpg" alt="blog">
+                    </div>
+                    <div class="col-8">
+                        <p class="feed-date">
+                            JUNE 6 2019 / ADMISSION, UPDATES
+                        </p>
+                        <p>
+                            Camus Camping and Learning Sessions
+                        </p>
+                    </div>
+                </div>
+                <div class="articles-card d-flex mb-3">
+                    <div class="col-3 articles-image">
+                        <img src="./media/images/xblog_1.jpg.pagespeed.ic.W_YnMVf_Za.jpg" alt="blog">
+                    </div>
+                    <div class="col-8">
+                        <p class="feed-date">
+                            JUNE 6 2019 / ADMISSION, UPDATES
+                        </p>
+                        <p>
+                            Camus Camping and Learning Sessions
+                        </p>
+                    </div>
+                </div>
+                <div class="articles-card d-flex">
+                    <div class="col-3 articles-image">
+                        <img src="./media/images/xblog_1.jpg.pagespeed.ic.W_YnMVf_Za.jpg" alt="blog">
+                    </div>
+                    <div class="col-8">
+                        <p class="feed-date">
+                            JUNE 6 2019 / ADMISSION, UPDATES
+                        </p>
+                        <p>
+                            Camus Camping and Learning Sessions
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="videos col-lg-3 col-md-12">
+                <h3 class="feed-header">
+                    Campus videos
+                </h3>
+                <a href="#" class="feed-redirect">
+                    View All Videos
+                </a>
+                <div class="videos-link">
+                    <span class="videos-playIcon position-absolute">
+                        <i class="fas fa-play"></i>
+                    </span>
+                    <img src="./media/images/xcourse_5.jpg.pagespeed.ic.rI86ZBarTv.jpg" alt="">
+                </div>
+                <div class="videos-link">
+                    <span class="videos-playIcon position-absolute">
+                        <i class="fas fa-play"></i>
+                    </span>
+                    <img src="./media/images/xcourse_5.jpg.pagespeed.ic.rI86ZBarTv.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- newsFeed rd-->
+        <section class="newsFeed">
+            <div class="newsFeed-wrapper d-flex align-items-center flex-wrap">
+                <div class="newsFeed-content col-lg-7 col-md-12">
+                    <h3>
+                        Subscribe to us!
+                    </h3>
+                    <p>
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                    </p>
+                </div>
+                <div class="enterEmail col-lg-5 col-md-12 d-flex flex-wrap">
+                    <input type="text" placeholder="Enter your email">
+                    <button class="btn">Send</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <Footer class="footer d-flex flex-wrap">
+            <div class="footer-companyInfo col-lg-3 col-md-6 mb-5">
+                <img src="./media/images/xlogo.png.pagespeed.ic.WY-5IeVnFD.png" class="mb-5" alt="logo">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    
+                </p>
+                <a class="footer-link" href="#">Learn More</a>
+            </div>
+            <div class="footer-campusLinks col-lg-3 col-md-6 mb-5">
+                <h5 class="mb-5">Our Campus</h5>
+                <a href="#" class="footer-link d-block">Acedemic</a>
+                <a href="#" class="footer-link d-block">News</a>
+                <a href="#" class="footer-link d-block">Our Interns</a>
+                <a href="#" class="footer-link d-block">Our Leadership</a>
+                <a href="#" class="footer-link d-block">Careers</a>
+                <a href="#" class="footer-link d-block">Human Resources</a>
+            </div>
+            <div class="footer-coursesLinks col-lg-3 col-md-6 mb-5">
+                <h5 class="mb-5">Our Courses</h5>
+                <a href="#" class="footer-link d-block">Math</a>
+                <a href="#" class="footer-link d-block">Science & Engineering</a>
+                <a href="#" class="footer-link d-block">Arts& Humanities</a>
+                <a href="#" class="footer-link d-block">Economics & Finance</a>
+                <a href="#" class="footer-link d-block">Business Administration</a>
+                <a href="#" class="footer-link d-block">Computer Science</a>
+            </div>
+            <div class="footer-ContactLinks col-lg-3 col-md-6 mb-5">
+                <h5 class="mb-5">Contact</h5>
+                <a href="#" class="footer-link d-block">Help Center</a>
+                <a href="#" class="footer-link d-block">Support Community</a>
+                <a href="#" class="footer-link d-block">Press</a>
+                <a href="#" class="footer-link d-block">Share Your Story</a>
+                <a href="#" class="footer-link d-block">Our Supporters</a>
+            </div>
+            <div class="footer-copyright col-12">
+                Copyright ©2021 All rights reserved | this template is made with ♥ by <span>Colorlib</span>
+            </div>
+        </Footer>
+
+        <!-- SideMenu -->
+        <div class="sideMenu">
+            <div class="sideMenu-wrapper">
+                <div class="sideMenu-close closeSideMenu">
+                    <i class="fas fa-times "></i>
+                </div>
+                <ul class="p-5">
+                    <a class="d-block mb-4">Home</a>
+                    <a class="d-block mb-4 sideMenuCollapseButton" data-toggle="collapse" href="#aboutUsContent">
+                        About Us <div class="collapseIcon">
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </a>
+                    <div class="collapse" id="aboutUsContent">
+                        <a class="d-block mb-4">Our Teachers</a>
+                        <a class="d-block mb-4">Our School</a>
+                    </div>
+                    <a class="d-block mb-4">Admission</a>
+                    <a class="d-block mb-4">Courses</a>
+                    <a class="d-block">Contact</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../Slick/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>
