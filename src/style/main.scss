@@ -1,11 +1,11 @@
-@import './common.scss';
-@import './slider.scss';
-@import './services.scss';
-@import './courses.scss';
-@import './about&testimonals.scss';
-@import './principles.scss';
-@import './feed.scss';
-@import './footer.scss';
+@import "./common.scss";
+@import "./slider.scss";
+@import "./services.scss";
+@import "./courses.scss";
+@import "./about&testimonals.scss";
+@import "./principles.scss";
+@import "./feed.scss";
+@import "./footer.scss";
 
 * {
     padding: 0;
@@ -21,20 +21,30 @@
     flex-wrap: wrap;
 
     &__login {
-        width: 50%;
+        width: 45%;
         min-width: 60px;
         color: $lightGreen;
         display: inline-flex;
         align-items: center;
-
+        justify-content: flex-end;
         svg {
             margin-right: 10px;
         }
     }
 
+    a {
+        cursor: pointer;
+        &:hover {
+            color: rgb(46, 46, 46);
+            text-decoration: none;
+        }
+    }
 
     @include breakPointmax(900px) {
         justify-content: flex-end;
+    }
+    @include breakPointmax(600px) {
+        padding: 10px 1%;
     }
 }
 
@@ -50,13 +60,14 @@
 .header__right {
     width: 20%;
     display: flex;
-
+    justify-content: space-between;
     @include breakPointmax(900px) {
         width: 40%;
     }
 
     @include breakPointmax(600px) {
-        width: 60%;
+        width: 70%;
+        justify-content: flex-end;
     }
 }
 
@@ -119,8 +130,6 @@
     }
 }
 
-
-
 .active {
     color: $lightGreen;
 }
@@ -176,16 +185,14 @@
             }
         }
         ul {
-
             > div {
                 padding-left: 20px;
-    
+
                 a {
                     font-size: 18px;
                 }
             }
         }
-
     }
 
     &-close {
