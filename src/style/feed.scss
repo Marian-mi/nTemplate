@@ -1,4 +1,4 @@
-@import './common.scss';
+@import './_common.scss';
 
 .feed {
     @include containers();
@@ -49,6 +49,15 @@
             height: 100%;
         }
     }
+    @include breakPointmax(990px) {
+        padding: 10px;
+        &-card {
+            height: 20%;
+        }
+        &-image {
+            padding: 0;
+        }
+    }
 }
 
 .videos {
@@ -57,7 +66,7 @@
         margin-bottom: 50px;
     }
     &-link {
-        height: 30%;
+        height: 35%;
         margin-bottom: 20px;
         position: relative;
         display: flex;
@@ -91,7 +100,7 @@
     background-attachment: fixed;
     &-wrapper {
         background-color: rgba(36, 57, 90, 0.753);
-        padding: 5% 10%;
+        @include containers();
     }
     &-content {
         color: rgba(212, 212, 212, 0.815);

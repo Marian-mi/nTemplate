@@ -1,17 +1,4 @@
-@import "./common.scss";
-@import "./slider.scss";
-@import "./services.scss";
-@import "./courses.scss";
-@import "./about&testimonals.scss";
-@import "./principles.scss";
-@import "./feed.scss";
-@import "./footer.scss";
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import './common';
 
 .header {
     background-color: #f8f9fb;
@@ -19,8 +6,9 @@
     justify-content: space-between;
     padding: 10px 10%;
     flex-wrap: wrap;
+    height: 70px;
 
-    &__login {
+    &-login {
         width: 120px;
         color: $lightGreen;
         display: inline-flex;
@@ -29,6 +17,15 @@
         margin-right: 10px;
         svg {
             margin-right: 10px;
+        }
+    }
+    
+    &-register {
+        width: 140px;
+        button {
+            width: 100%;
+            border-radius: 0;
+            height: 50px;
         }
     }
 
@@ -49,7 +46,7 @@
     }
 }
 
-.header__left {
+.header-left {
     width: 55%;
     min-width: 550px;
 
@@ -58,7 +55,7 @@
     }
 }
 
-.header__right {
+.header-right {
     width: 25%;
     display: flex;
     justify-content: space-around;
@@ -67,12 +64,12 @@
     }
 
     @include breakPointmax(600px) {
-        width: 70%;
+        width: 100%;
         justify-content: flex-end;
     }
 }
 
-.header__link {
+.header-link {
     width: 30%;
     height: 50px;
     display: inline-flex;
@@ -85,7 +82,7 @@
     }
 }
 
-.header__link button {
+.header-link button {
     margin-left: 50px;
     border-radius: 0;
 }
@@ -144,6 +141,9 @@
         color: black;
 
         &-active {
+            color: $lightGreen;
+        }
+        &:hover {
             color: $lightGreen;
         }
     }

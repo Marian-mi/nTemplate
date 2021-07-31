@@ -1,4 +1,4 @@
-@import "./common.scss";
+@import "./_common.scss";
 
 .courses {
     flex-wrap: wrap;
@@ -89,6 +89,9 @@
 
     .slick-dots {
         bottom: 30px;
+        li {
+            margin: 0;
+        }
         button::before {
             color: $Green;
         }

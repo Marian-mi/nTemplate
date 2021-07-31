@@ -14,13 +14,11 @@
         border: 1px solid rgba(165, 165, 165, 0.541);
         width: 330px;
         margin: 0 10px;
-        padding: 0 10px;
-        padding-bottom: 20px;
+        padding: 0 20px;
+        padding-bottom: 40px;
         button {
-            color: white;
-            border-radius: 0;
-            background-color: $Green;
-            margin: 10px 0;
+            @include button;
+            width: 150px;
         }
         h5 {
             margin-bottom: 20px;
@@ -28,37 +26,40 @@
         }
         p {
             color: rgba(66, 66, 66, 0.795);
+            margin-bottom: 30px;
         }
     }
 }
 
 .hexagon {
     position: relative;
-    width: 120px;
+    width: 100px;
     margin: auto;
     bottom: 23%;
     z-index: 4;
     overflow: visible;
     &-middle {
-        width: 120px;
+        width: 100px;
         background-color: $Green;
-        height: 75px;
+        height: 60px;
         svg {
-            font-size: 46px;
-            color: rgba(255, 255, 255, 0.836);
+            font-size: 44px;
+            color: rgba(255, 255, 255, 0.911);
             position: relative;
-            top: 10px;
+            top: 5px;
         }
     }
     &-top {
         border-bottom: 30px solid $Green;
-        border-left: 60px solid transparent;
-        border-right: 60px solid transparent;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        transform: translateY(1px) scaleX(1.01);
     }
     &-bottom {
         border-top: 30px solid $Green;
-        border-left: 60px solid transparent;
-        border-right: 60px solid transparent;
-        margin-bottom: -20px;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        margin-bottom: -35px;
+        transform: scaleX(1.01) translateY(-1px) ;
     }
 }

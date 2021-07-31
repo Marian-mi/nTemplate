@@ -3,7 +3,7 @@ $('.slick-slider').slick({
     arrows: true,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     prevArrow: '<button class="slicks-prev slicks-arrow"><i class="fas fa-arrow-left"></i></button>',
     nextArrow: '<button class="slicks-next slicks-arrow"><i class="fas fa-arrow-right"></i></button >',
 })
@@ -42,8 +42,7 @@ $('.testimonal-slider').slick({
     infinite: true,
     arrows: false,
     speed: 600,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    autoplay: false,
     slidesToShow: 2,
     slidesToScroll: 2,
     adaptiveHeight: true,
